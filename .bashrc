@@ -10,8 +10,11 @@ alias la='ls -A'
 alias ..='cd ..'
 alias cls='clear'
 
-# Weather
-alias weather='curl -s --max-time 5 wttr.in?0'
+# The Matrix
+alias matrix='timeout 5s bash -c "echo -e \"\e[32m\"; while :; do for i in {1..20}; do [ \$((RANDOM%2)) -eq 0 ] && echo -n \" \" || echo -n \"\$((RANDOM%2))\"; done; echo; sleep 0.05; done; echo -e \"\e[0m\""'
+
+# Magic 8 Ball
+alias 8ball='./bin/magic-8-ball.sh'
 
 # Enable color for grep
 alias grep='grep --color=auto'
